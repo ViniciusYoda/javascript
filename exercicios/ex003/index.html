@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão em JS</title>
+    
+    <style>
+        body {
+            background-color: yellow;
+            color: grey;
+            font: normal 20pt Arial;
+        }
+        h2 {
+            color: gold;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Primeiro código em Javascript</h1>
+    <h2>Olá mundo</h2>
+    <p>Já dei o primeiro comando</p>
+    <script>
+        //converte string para number
+      var n1 = Number.parseFloat(window.prompt('Digite um numero: '))//Float para real
+      var n2 = Number.parseInt(window.prompt('Digite outro numero: '))//Int para inteiro
+      var n3 = Number(window.prompt('Digite o último número: '))//Number ele se vira
+      var s = n1 + n2 + n3
+      window.alert(`A soma entre ${n1} com ${n2} e ${n3} é igual a ${s}`)
+      //String converte number para string
+      // + pode servir para adição e também para concatenação
+      // para o + ser adição precisa ser: number + number
+      // para o + ser concatenação precisa ser: string + string
+    </script>
+</body>
+</html>

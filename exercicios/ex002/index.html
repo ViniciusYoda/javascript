@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro código JS</title>
-    <script src=""></script>
+    <title>Tela de pergunta e resposta</title>
+    
     <style>
         body {
             background-color: yellow;
@@ -23,13 +23,9 @@
     <h2>Olá mundo</h2>
     <p>Já dei o primeiro comando</p>
     <script>
-        //isso é um comentario de linha única
-        /*Isso é um comentario de
-        varias linhas
-        */
-        window.alert('Olá Mundo!') //mostra uma mensagem de alerta na tela
-        window.confirm('Está gostando do JS?')//Janela com botão de pergunta, com resposta ok e cancelar
-        window.prompt('Qual é seu nome?')//Faz uma pergunta
+        // var é uma forma de declarar uma variavel
+        var nome = window.prompt('Qual é seu nome?')
+        window.alert('É um grande prazer em te conhecer, ' + nome + "!") // + = concatenação
     </script>
 </body>
 </html>
