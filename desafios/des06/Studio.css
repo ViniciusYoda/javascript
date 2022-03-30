@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgba(109, 48, 106, 0.836);
+    background-color: rgba(145, 52, 140, 0.836);
     font: normal 15pt Arial;
 }
 header {
@@ -19,6 +19,9 @@ section {
 div {
 
     padding: 8px;
+}
+select#flista {
+    width: 150px;
 }
 footer {
     color: white;
