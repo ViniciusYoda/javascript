@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+div {
+    background-color: rgba(105, 105, 105, 0.733);
+    padding: 100px;
+}
+
+header {
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#botão {
+    width: 100px;
+    height: 100px;
+}
