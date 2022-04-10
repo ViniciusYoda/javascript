@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(112, 6, 27, 0.767);
+}
+
+#click {
+    width: 100px;
+    height: 50px;
+}
