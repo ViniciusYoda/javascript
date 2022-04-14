@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+h1 {
+    margin: auto;
+    background-color: chartreuse;
+    border-color: black;
+    color: rgba(139, 62, 139, 0.534);
+    font-size: 2.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    padding: 15px 20px 15px 20px;
+    text-align: justify;
+    text-decoration: underline;
+}
+#click {
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315);
+}
+
+#res {
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
