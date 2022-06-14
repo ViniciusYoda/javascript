@@ -1,22 +1,35 @@
-const firstName = "Vinícius"
-const lastName = "Yoda"
+const names = ["Felipe", "João", "Julia", 10, false];
 
-const names = 'Antonio'
+const joao = names[1];
 
-console.log("Meu nome é " + firstName + " " + lastName)
-console.log(`Meu nome é $(firstName.toUpperCase()) $(lastName.toLowerCase())`);
+console.log(joao);
 
-console.log(names.split(","))
+names.push('Pedro');
 
-const number = 5;
+console.log(names);
 
-console.log(number.toString())
-console.log(typeof number.toString())
+names.unshift(20);
 
-console.log(2 == 2);
+console.log(names)
 
-const x = null;
+names.pop();
 
-const y = undefined;
+console.log(names)
+
+names[3] = 'Gustavo';
+
+
+
+console.log(names.length);
+
+console.log(names.indexOf('Felipe'));
+
+const sortsNames = names.sort();
+
+const namesIsArray = Array.isArray(names)
+
+console.log(sortsNames);
+
+console.log(namesIsArray)
 
 
