@@ -19,3 +19,9 @@ const todos = [
 const descriptionOfLastToDo = todos[2].description;
 
 console.log(descriptionOfLastToDo)
+
+const todosJSON = JSON.stringify(todos);
+
+console.log(todosJSON)
+const todosList = JSON.parse(todosJSON);
+console.log(todosList)
