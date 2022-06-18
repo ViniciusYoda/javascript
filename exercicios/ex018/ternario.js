@@ -1,0 +1,1 @@
+var greeting = (isBirthday) ? 'Happy birthday Mrs. Smith - we hope you have a great day!' : 'Goof morning Mrs. Smith.';
