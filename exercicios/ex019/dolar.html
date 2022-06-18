@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolar</title>
+    <style>
+    body {
+        background-color: aquamarine;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: lighter;
+        font-style: oblique;
+        font-size: 1.1em;
+        
+    }
+    input {
+        font: normal 18pt Arial;
+        width: 110px;
+    }
+    div#res {
+        margin-top: 20px;
+        
+    }
+
+    #res {
+        background-color: white;
+        padding-left: 600px;
+    }
+    h1 {
+        color: darkorange;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    label {
+        margin-left: 30px;
+        color: cornflowerblue;
+        font-size: larger;
+    }
+
+    #botao{
+        width: 25vw;
+    }
+    </style>
+    <script src="dolar.js"></script>
+</head>
+<body>
+    <h1>Comprando dolares</h1>
+    <div>
+        <label for="dolar">Quanto de dinheiro você tem na carteira?</label>
+        <input type="number" name="dolar" id="dolar">
+        <input type="button" value="converter" id="botao" onclick="converter()">
+    </div>
+    <p id="res"></p>
+</body>
+</html>
