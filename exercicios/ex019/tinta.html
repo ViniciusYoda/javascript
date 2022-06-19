@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinta</title>
+    <style>
+    body {
+        background-color: azure;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: lighter;
+        font-style: oblique;
+        font-size: 1.1em;
+        
+    }
+    input {
+        font: normal 18pt Arial;
+        width: 110px;
+    }
+    div#res {
+        margin-top: 20px;
+        
+    }
+
+    #res {
+        background-color: white;
+        padding-left: 600px;
+        text-align: justify;
+    }
+    h1 {
+        color: crimson;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    label {
+        margin-left: 30px;
+        color: goldenrod;
+        font-size: larger;
+    }
+
+    #botao{
+        width: 25vw;
+    }
+</style>
+<script src="tinta.js" defer></script>
+</head>
+<body>
+    <h1>Comprando tinta</h1>
+    <div>
+        <label for="al">Altura da parede: </label>
+        <input type="number" name="al" id="al">
+        <label for="la">Largura da parede: </label>
+        <input type="number" name="la" id="la">
+        <input id="botao" type="button" value="multiplicar" onclick="area()">
+        <p id="res"></p>
+    </div>
+</body>
+</html>
