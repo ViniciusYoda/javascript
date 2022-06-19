@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar Carro</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            font-style: oblique;
+            font-size: 1.1em;
+                
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 130px;
+        }
+        div#res {
+            margin-top: 20px;
+                
+        }
+        
+        #res {
+            background-color: white;
+            text-align: center;
+        }
+        h1 {
+            color: crimson;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        label {
+            margin-left: 30px;
+            color: goldenrod;
+            font-size: larger;
+        }
+        
+        #botao{
+            width: 25vw;
+         }
+    </style>
+    <script src="pagarCarro.js" defer></script>
+</head>
+<body>
+    <h1>Pagamento do aluguel de carro</h1>
+
+    <div>
+        <label for="dias">Dias alugados</label>
+        <input type="number" name="dias" id="dias">
+        <label for="km">Km rodados</label>
+        <input type="number" name="km" id="km">
+        <input type="button" value="calcular" onclick="calcular()">
+        <p id="res"></p>
+    </div>
+</body>
+</html>
