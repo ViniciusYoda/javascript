@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+    <style>
+        body {
+        background-color: beige;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: lighter;
+        font-style: oblique;
+        font-size: 1.1em;
+        
+    }
+    input {
+        font: normal 18pt Arial;
+        width: 110px;
+    }
+    div#res {
+        margin-top: 20px;
+        
+    }
+
+    #res {
+        background-color: white;
+        text-align: center;
+    }
+    h1 {
+        color: crimson;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    label {
+        margin-left: 30px;
+        color: goldenrod;
+        font-size: larger;
+    }
+
+    #botao{
+        width: 25vw;
+    }
+    </style>
+    <script src="desconto.js" defer></script>
+</head>
+<body>
+    <h1>Desconto de 5%</h1>
+    <div>
+        <label for="dinheiro">Qual é o preço do produto? R$</label>
+        <input type="number" name="dinheiro" id="dinheiro">
+        <input type="button" value="descontar" id="botao" onclick="descontar()">
+        <p id="res"></p>
+    </div>
+</body>
+</html>
