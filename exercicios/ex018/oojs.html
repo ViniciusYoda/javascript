@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+
+  </body>
+
+    <script>
+        var pessoa = {
+            nome: ['Bob', 'Smith'],
+            idade: 32,
+            sexo: 'masculino',
+            interesses: ['música', 'esquiar'],
+            bio: function(){
+                alert(this.nome[0]) + ' ' + this.nome[1] + ' tem ' + this.idade + ' anos de idade. Ele gosta de ' + this.interesses[0] + ' e ' + this.interesses[1] + '.';
+            },
+            saudacao: function(){
+                alert('Oi! Eu sou ' + this.nome[0] + '.');
+            }
+        };
+    </script>
+</html>
