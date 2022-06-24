@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: chocolate;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            font-style: oblique;
+            font-size: 1.1em;
+            
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 110px;
+        }
+        div#res {
+            margin-top: 20px;
+            
+        }
+    
+        #res {
+            background-color: white;
+            text-align: center;
+        }
+        h1 {
+            color: indigo;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        label {
+            margin-left: 30px;
+            color: goldenrod;
+            font-size: larger;
+        }
+    
+        #botao{
+            width: 25vw;
+        }
+    </style>
+    <script src="VerificarNome.js" defer></script>
+</head>
+<body>
+    <h1>Verificar um nome</h1>
+    <div>
+        <label for="nome">Qual é seu nome?</label>
+        <input type="text" name="nome" id="nome">
+        <input type="button" value="ver" onclick="ver()">
+        <p id="res"></p>
+    </div>
+</body>
+</html>
