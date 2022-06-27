@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o número</title>
+    <style>
+        body {
+            background-color: crimson;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            font-style: oblique;
+            font-size: 1.1em;
+            
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 110px;
+        }
+        div#res {
+            margin-top: 20px;
+            
+        }
+    
+        #res {
+            background-color: white;
+            text-align: center;
+        }
+        h1 {
+            color: indigo;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h3,label {
+            margin-left: 30px;
+            color: black;
+            font-size: larger;
+        }
+    
+        #botao{
+            width: 25vw;
+        }
+    </style>
+    <script src="JogoDeAdivinhacao.js" defer></script>
+</head>
+<body>
+    <h1>Jogo de adivinhação</h1>
+    <div>
+        <h3>Vou pensar em um número entre 0 e 5. Tente adivinhar...</h3>
+        <label for="num">EM que número eu pensei?</label>
+        <input type="number" name="num" id="num">
+        <input type="button" value="Adivinhe" onclick="adivinhe()">
+        <p id="proc"></p>
+        <p id="res"></p>
+
+    </div>
+</body>
+</html>
