@@ -6,12 +6,12 @@ function ver(){
     const p = Number(n1.value)
     const s = Number(n2.value)
     const t = Number(n3.value)
-    const menor = p
-    const maior = p
+    let menor = p
     if (s<p && s<t)
         menor = s
     if (t<p && t<s)
         menor = t
+    let maior = p
     if (s>p && s>t)
         maior = s
     if (t>p && t>s)
