@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>DOM</title>
+    <script>
+        // run this function when the document is loaded
+        window.onload = function(){
+
+        // create a couple of elements in an otherwise empty HTML page
+            var heading = document.createElement("h1");
+            var heading_text = document.createTextNode("Big Head!");
+            heading.appendChild(heading_text)
+            document.body.appendChild(heading)
+        }
+
+        var tabela = document.getElementById("table");
+        var atributosTabela = tabela.attributes; // interface Node/Element
+        for (var i = 0; i < atributosTabela.length; i++) {
+            // interface HTMLTableElement: atributo border
+            if (atributosTabela[i].nodeName.toLowerCase() == "border")
+                tabela.border = "1";
+        }
+        // interface HTMLTableElement: atributo summary
+        table.summary = "nota: aumento de borda";
+    </script>
+</head>
+<body>
+    <div id="table">gebegw</div>
+</body>
+</html>

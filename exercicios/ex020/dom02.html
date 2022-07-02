@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script type="application/javascript">
+        function setBodyAttr(attr, value){
+            if (document.body)
+    eval('document.body.'+attr+'="'+value+'"');
+            else notSupported();
+        }
+    </script>
+</head>
+<body>
+    <div style="margin: .5in; height: 400;">
+        <p><b>text</b></p>
+        <form>
+            <select onChange="setBodyAttr('text',this.options[this.selectedIndex].value);">
+                <option value="black">preto</option>
+                <option value="darkblue">azul escuro</option>
+            </select>
+            <p><b>bgColor</b></p>
+            <select onChange="setBodyAttr('bgColor',this.options[this.selectedIndex].value);">
+                <option value="white">branco</option>
+                <option value="cinza">cinza</option>
+            </select>
+            <p><b>link</b></p>
+            <select onChange="setBodyAttr('link',this.options[this.selectedIndex].value);">
+                <option value="blue">azul</option>
+                <option value="green">verde</option>
+            </select> <small>
+                <a href="http://algum.website.tld/pagina.html" id="amostra">
+                    (link)</a></small><br>
+        </form>
+        <form>
+            <input type="button" value="version" onclick="ver()" />
+        </form>
+    </div>
+</body>
+</html>
