@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body onload="start()">
+    
+</body>
+<script>
+    function start() {
+        const mybody = document.getElementsByTagName("body")[0];
+        const mytable = document.createElement("table");
+        const mytablebody = document.createElement("tbody");
+
+        for(let row = 0; row < 2; row++){
+            mycurrent_row=document.createElement("tr");
+            for(let col = 0; col < 2; col++){
+                const mycurrent_cell = document.createElement("td");
+                const currenttext = document.createTextNode("cell is: " + row + col);
+                mycurrent_cell.appendChild(currenttext);
+                mycurrent_row.appendChild(mycurrent_cell);
+                // set the cell backgroudn color
+                // if the column is 0. If the column is 1 hide the cell
+                if (col === 0){
+                    mycurrent_cell.style.background = "rgb(255,0,0)"
+                } else {
+                    mycurrent_cell.style.display = "none";
+                }
+            }
+            mytablebody.appendChild(mycurrent_row);
+        }
+        mytable.appendChild(mytablebody);
+        mybody.appendChild(mytable);
+    }
+</script>
+</html>

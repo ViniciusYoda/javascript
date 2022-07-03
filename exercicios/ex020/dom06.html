@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script>
+        function start() {
+            // get the reference for the body
+            const mybody = document.getElementsByTagName("body")[0];
+
+            // creates <table> and <tbody> elements 
+            const mytable = document.createElement("table");
+            const mytablebody = document.createElement("tbody");
+
+            // creating all cells
+            for(let j = 0; j < 3; j++){
+                // creates a <tr> element
+                    const mycurrent_row = document.createElement("tr");
+
+                    for(let i = 0; i < 4; i++){
+                        // creates a <td> element
+                        const mycurrent_cell = document.createElement("td");
+                        //creates a Text Node
+                        currenttext = document.createTextNode("cell is row " + j + ", column " + i);
+                        // appends the Text Node we created into the cell <td>
+                        mycurrent_cell.appendChild(currenttext);
+                        // appends the cell <td> into the row <tr>
+                        mycurrent_row.appendChild(mycurrent_cell)
+                    }
+                    // appends the row <tr> into <tbody>
+                    mytablebody.appendChild(mycurrent_row);
+            }
+
+            // appends <tbody> into <table>
+            mytable.appendChild(mytablebody)
+            // appends <table> into <body>
+            mybody.appendChild(mytable)
+            // sets the border attribute of mytable to 2;
+            mytable.setAttribute("border","2");
+        }
+        mybody = document.getElementsByTagName("body")[0];
+        mytable = mybody.getElementsByTagName("table")[0];
+        mytablebody = mytable.getElementsByTagName("tbody")[0];
+        myrow = mytablebody.getElementsByTagName("tr")[1];
+        mycel = myrow.getElementsByTagName("td")[1];
+
+        // first item element of the childNodes list of mycel
+        myceltext=mycel.childNodes[0];
+
+        // content of currenttext is the data contetn of myceltextx 
+        currenttext=document.createTextNode(myceltext.data);
+        mybody.appendChild(currenttext);
+
+        mytable.getAttribute("border");
+    </script>
+</head>
+<body onload="start()">
+    
+</body>
+</html>
