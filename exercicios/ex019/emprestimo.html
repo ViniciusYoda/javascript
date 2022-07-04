@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprestimo</title>
+        <style>
+        body {
+            background-color: darkgrey;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            font-style: oblique;
+            font-size: 1.1em;
+            
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 110px;
+        }
+        div#res {
+            margin-top: 20px;
+            
+        }
+    
+        #res, #para{
+            background-color: white;
+            text-align: center;
+        }
+        h1 {
+            color: indigo;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        label {
+            margin-left: 30px;
+            color: black;
+            font-size: larger;
+        }
+    
+        #botao{
+            width: 25vw;
+        }
+    </style>
+    <script src="emprestimo.js" defer></script>
+</head>
+<body>
+    <h1>Calculando emprestimo</h1>
+    <div>
+        <label for="casa">Qual é o valor da casa? R$</label>
+        <input type="number" name="casa" id="casa">
+        <label for="salario">Qual seu salário? R$</label>
+        <input type="number" name="salario" id="salario">
+        <label for="anos">Quantos anos de financiamento?</label>
+        <input type="number" name="anos" id="anos">
+        <input type="button" value="calcular" onclick="calcular()">
+        <p id="res"></p>
+        <p id="para"></p>
+    </div>
+</body>
+</html>
