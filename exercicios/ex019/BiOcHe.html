@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binário Octal Hexadecimal</title>
+    <style>
+        body {
+            background-color: darkkhaki;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            font-style: oblique;
+            font-size: 1.1em;
+            
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 110px;
+        }
+        div#res {
+            margin-top: 20px;
+            
+        }
+    
+        #res, #seleção{
+            background-color: white;
+            text-align: center;
+        }
+        h1 {
+            color: indigo;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        label {
+            margin-left: 30px;
+            color: black;
+            font-size: larger;
+        }
+    
+        #botao{
+            width: 25vw;
+            margin-left: 200px;
+            
+        }
+        #op1 {
+            background-color: white;
+        }
+        #op2{
+            background-color: white;
+        }
+        #op3{
+            background-color: white;
+        }
+        #opcao {
+            width: 24vw;
+            margin-top: 10px;
+            padding-top: 10px;
+            margin-left: 200px;
+        }
+    </style>
+    <script src="BiOcHe.js" defer></script>
+</head>
+<body>
+    <h1>Convertor de Números</h1>
+    <div>
+        <label for="numero">Escreva um número inteiro</label>
+        <input type="number" name="numero" id="numero">
+        <p id="seleção">Escolha a base de conversão</p>
+        <label for="op1" id="op1">[1] para binário
+        </label>
+        <label for="op2" id="op3">[2] para octal</label>
+        <label for="op3" id="op3">[3] para hexadecimal</label>
+        <input type="number" name="opcao" id="opcao"> <br>
+        <input type="button" value="ver" onclick="ver()" id="botao">
+        <p id="res"></p>
+    </div>
+</body>
+</html>
