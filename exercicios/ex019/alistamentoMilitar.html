@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alistamento Militar</title>
+    <style>
+        body {
+            background-color: darkolivegreen;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            font-style: oblique;
+            font-size: 1.1em;
+            
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 110px;
+        }
+        div#res {
+            margin-top: 20px;
+            
+        }
+    
+        #res, #para{
+            background-color: white;
+            text-align: center;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        label {
+            margin-left: 30px;
+            color: black;
+            font-size: larger;
+        }
+    
+        #botao, #ano{
+            width: 25vw;
+            
+        }
+    </style>
+    <script src="alistamentoMilitar.js" defer></script>
+</head>
+<body>
+    <h1>Alistamento Militar</h1>
+    <div>
+        <label for="ano">Ano de Nascimento: </label>
+        <input type="number" name="ano" id="ano" placeholder="Informe apenas o ano">
+        <input type="button" value="calcular" id="botao" onclick="calcular()">
+        <p id="res"></p>
+        <p id="para"></p>
+    </div>
+</body>
+</html>
