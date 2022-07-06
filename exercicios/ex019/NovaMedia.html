@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Média</title>
+        <style>
+        body {
+            background-color: darkorange;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            font-style: oblique;
+            font-size: 1.1em;
+            
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 110px;
+        }
+        div#res {
+            margin-top: 20px;
+            
+        }
+    
+        #res{
+            background-color: white;
+            text-align: center;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        label {
+            margin-left: 30px;
+            color: black;
+            font-size: larger;
+        }
+    
+        #botao, #ano{
+            width: 25vw;
+            
+        }
+    </style>
+    <script src="NovaMedia.js" defer></script>
+</head>
+<body>
+    <h1>Nova Média</h1>
+    <div>
+        <label for="n1">Primeira Nota: </label>
+        <input type="number" name="n1" id="n1">
+        <label for="n2">Segunda Nota: </label>
+        <input type="number" name="n2" id="n2">
+        <input type="button" value="calcular" id="botao">
+        <p id="res"></p>
+    </div>
+</body>
+</html>
