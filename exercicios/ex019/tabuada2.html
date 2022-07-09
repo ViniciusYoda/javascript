@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body {
+            background-color: darkslategray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            font-style: oblique;
+            font-size: 1.1em;
+            
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 110px;
+        }
+        div#res {
+            margin-top: 20px;
+            
+        }
+
+        #res{
+            background-color: white;
+            padding-left: 600px;
+        }
+        h1 {
+            color: crimson;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        label {
+            margin-left: 30px;
+            color: goldenrod;
+            font-size: larger;
+        }
+
+        #botao{
+            width: 25vw;
+        }
+    </style>
+    <script src="tabuada2.js" defer></script>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <label for="num">Escolha um número</label>
+    <input type="number" name="num" id="num">
+    <input id="botao" type="button" value="multiplicar">
+    <p id="res"></p>
+</body>
+</html>
