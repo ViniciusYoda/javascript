@@ -1,5 +1,5 @@
 const botao = document.querySelector('#botao')
-botoa.addEventListener('click', ()=>{
+botao.addEventListener('click', ()=>{
     const res = document.querySelector('#res')
     const para = document.querySelector('#para')
     const frase = String(document.querySelector('#frase').toUpperCase().trim())
