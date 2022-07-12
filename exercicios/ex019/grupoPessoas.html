@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pessoas</title>
+    <style>
+        body {
+            background-color: dimgrey;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            font-style: oblique;
+            font-size: 1.1em;
+            
+        }
+
+        p{
+            text-align: justify;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 110px;
+        }
+        div#res, div#para {
+            margin-top: 20px;
+            
+        }
+    
+        #res, #homem, #mulher {
+            background-color: white;
+            text-align: center;
+        }
+        h1 {
+            color: black;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        label {
+            margin-left: 30px;
+            color: linen;
+            font-size: larger;
+        }
+    
+        #botao{
+            margin-top: 50px;
+            width: 25vw;
+        }
+    </style>
+    <script src="grupoPessoas.js" defer></script>
+</head>
+<body>
+    <h1>Analisando dados de pessoas</h1>
+    <div>
+        <p>===== 1º Pessoa =====</p>
+        <label for="nome1">Nome: </label>
+        <input type="text" name="nome1" id="nome1">
+        <label for="idade1">Idade: </label>
+        <input type="number" name="idade1" id="idade1">
+        <label for="sexo1">Sexo</label>
+        <input type="text" placeholder="[M/F]">
+    </div>
+    <div>
+        <p>===== 2º Pessoa =====</p>
+        <label for="nome2">Nome: </label>
+        <input type="text" name="nome2" id="nome2">
+        <label for="idade2">Idade: </label>
+        <input type="number" name="idade2" id="idade2">
+        <label for="sexo2">Sexo</label>
+        <input type="text" placeholder="[M/F]">
+    </div>
+    <div>
+        <p>===== 3º Pessoa =====</p>
+        <label for="nome3">Nome: </label>
+        <input type="text" name="nome3" id="nome3">
+        <label for="idade3">Idade: </label>
+        <input type="number" name="idade3" id="idade3">
+        <label for="sexo3">Sexo</label>
+        <input type="text" placeholder="[M/F]">
+    </div>
+    <div>
+        <p>===== 4º Pessoa =====</p>
+        <label for="nome4">Nome: </label>
+        <input type="text" name="nome4" id="nome4">
+        <label for="idade4">Idade: </label>
+        <input type="number" name="idade4" id="idade4">
+        <label for="sexo4">Sexo</label>
+        <input type="text" placeholder="[M/F]">
+    </div>
+    <div>
+        <button id="botao">Ver analise</button>
+        <p id="res"></p>
+        <p id="homem"></p>
+        <p id="mulher"></p>
+    </div>
+
+</body>
+</html>
