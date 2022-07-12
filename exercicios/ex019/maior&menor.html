@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo de Idade</title>
+    <title>Calculando os Pesos</title>
     <style>
         body {
-            background-color: deepskyblue;
+            background-color: dimgray;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: lighter;
             font-style: oblique;
@@ -28,7 +28,7 @@
             text-align: center;
         }
         h1 {
-            color: crimson;
+            color: black;
             text-align: center;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
@@ -42,12 +42,32 @@
             width: 25vw;
         }
     </style>
-    <script src="grupoDeMaioridade.js" defer></script>
+    <script src="maior&menorPeso.js" defer></script>
 </head>
 <body>
-    <h1>Grupo de Idade</h1>
+    <h1>Descobrindo os pesos</h1>
     <div>
-        <button id="botao">ver</button>
+        <label for="peso1">Peso da 1ªPessoa: </label>
+        <input type="number" name="peso1" id="peso1">
+    </div>
+    <div>
+        <label for="peso2">Peso da 2ªPessoa: </label>
+        <input type="number" name="peso2" id="peso2">
+    </div>
+    <div>
+        <label for="peso3">Peso da 3ªPessoa: </label>
+        <input type="number" name="peso3" id="peso3">
+    </div>
+    <div>
+        <label for="peso4">Peso da 4ªPessoa: </label>
+        <input type="number" name="peso4" id="peso4">
+    </div>
+    <div>
+        <label for="peso5">Peso da 5ªPessoa: </label>
+        <input type="number" name="peso5" id="peso5">
+    </div>
+    <div>
+        <button id="botao">Descobrir</button>
         <p id="res"></p>
         <p id="para"></p>
     </div>
