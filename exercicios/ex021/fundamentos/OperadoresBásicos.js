@@ -75,8 +75,8 @@ alert(8**(1/3)); // 2 (power of 1/3 is the same as a cubic root)
 
 //Mas, se o binário +for aplicado a strings, ele as mescla (concatena):
 
-let s = "my" + "string";
-alert(s); // mystring
+let ms = "my" + "string";
+alert(ms); // mystring
 
 //Observe que, se algum dos operandos for uma string, o outro também será convertido em uma string.
 
