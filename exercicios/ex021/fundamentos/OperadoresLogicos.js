@@ -258,3 +258,44 @@ if (y > 0) alert( 'Greater than zero! ');
 
 /*
 
+! (NÃO)
+
+O operador booleano NOT é representado com um sinalde exclamação !.
+
+A sintaze é bem simples:
+
+*/
+
+resposta = !value;
+
+/*
+
+O operador aceita um único argumento e faz o seguinte:
+
+1. Converte o operando para o tipo booleano: true/false.
+2. Retorna o valor inverso.
+
+Por exemplo:
+
+*/
+
+alert( !true ); // false
+alert( !0 ); // true
+
+// Um duplo NOT !! às vezes é usado para converter um valor para o tipo booleano:
+
+alert( !!"non-empty string" ); // true
+alert( !!null ); // false
+
+/*
+
+Ou seja, o primeiro NOT converte o valor para booleano e retorna o inverso, e o seguinte NOT o inverte pnovamente. No final, temos uam conversão simples de valor para booleano.
+
+Há uma maneira um pouco mais detalhada de fazer a mesma coisa- uma Boolean função interna:
+
+*/
+
+alert( Boolean("non-empty string") ); // true
+alert( Boolean(null) ); // false
+
+// A precedência de NOT ! é a mais alta de todos os operadores lógicos, então ele sempre executa primeir, antes && ou ||.
