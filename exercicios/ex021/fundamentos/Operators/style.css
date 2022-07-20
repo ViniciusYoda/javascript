@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(105, 14, 105), rgb(214, 6, 6));
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 57px;
+    font-style: oblique;
+    color: white;
+}
+
+h2 {
+    text-align: start;
+    font-size: 24px;
+    font-style: italic;
+    color: white;
+}
+
+.soma {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 66px;
+}
+
+.soma input {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.soma button {
+    width: 25%;
+    border: none;
+    border-bottom: 1px;
+}
+
+.soma p {
+    background-color: white;
+    width: 25%;
+}
+
+.subtrair {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 66px;
+}
+
+.subtrair input {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.subtrair button {
+    width: 25%;
+    border: none;
+    border-bottom: 1px;
+}
+
+.subtrair p {
+    background-color: white;
+    width: 25%;
+}
+
+.multiplicacao {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 66px;
+}
+
+.multiplicacao input {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.multiplicacao button {
+    width: 25%;
+    border: none;
+    border-bottom: 1px;
+}
+
+.multiplicacao p {
+    background-color: white;
+    width: 25%;
+}
+
+.divisao{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 66px;
+}
+
+.divisao input {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.divisao button {
+    width: 25%;
+    border: none;
+    border-bottom: 1px;
+}
+
+.divisao p {
+    background-color: white;
+    width: 25%;
+}
+
+.restos{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 66px;
+}
+
+.restos input {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.restos button {
+    width: 25%;
+    border: none;
+    border-bottom: 1px;
+}
+
+.restos p {
+    background-color: white;
+    width: 25%;
+}
+
+.exponiente{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 66px;
+}
+
+.exponiente input {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.exponiente button {
+    width: 25%;
+    border: none;
+    border-bottom: 1px;
+}
+
+.exponiente p {
+    background-color: white;
+    width: 25%;
+}
