@@ -31,7 +31,7 @@ Quando uma função é executada com new, ela executa os seguintes passos:
 
 1. Um novo objeto vazio é criado e atribuído a this.
 2. O corpo da função é executado. Normalmente ele modifica this, adiciona novas propriedades a ele.
-3. O valor de thisé retornado.
+3. O valor de this é retornado.
 
 Em outras palavras, new User(...)faz algo como:
 
@@ -130,13 +130,13 @@ Provavelmente não é uma boa coisa para usar em todos os lugares, porque omitir
 Retorno dos construtores
 Normalmente, os construtores não têm uma returninstrução. Sua tarefa é escrever todas as coisas necessárias em this, e isso automaticamente se torna o resultado.
 
-Mas se houver uma returndeclaração, a regra é simples:
+Mas se houver uma return declaração, a regra é simples:
 
-Se returnfor chamado com um objeto, o objeto será retornado em vez de this.
-Se returnfor chamado com uma primitiva, será ignorado.
+Se return for chamado com um objeto, o objeto será retornado em vez de this.
+Se return for chamado com uma primitiva, será ignorado.
 Em outras palavras, returncom um objeto retorna esse objeto, em todos os outros casos thisé retornado.
 
-Por exemplo, aqui returnsubstitui thisretornando um objeto:
+Por exemplo, aqui return substitui this retornando um objeto:
 
 */
 
@@ -162,7 +162,7 @@ alert( new SmallUser().name ); // John
 
 /*
 
-Normalmente, os construtores não têm uma returninstrução. Aqui mencionamos o comportamento especial com o retorno de objetos principalmente para fins de completude.
+Normalmente, os construtores não têm uma return instrução. Aqui mencionamos o comportamento especial com o retorno de objetos principalmente para fins de completude.
 
 Omitindo parênteses
 A propósito, podemos omitir parênteses após new, se não tiver argumentos:
