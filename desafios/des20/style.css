@@ -1,0 +1,20 @@
+* {
+    font-family: "Arial";
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+}
+
+div {
+    color: #fff;
+    font-size: 93px;
+    font-weight: 300;
+}
