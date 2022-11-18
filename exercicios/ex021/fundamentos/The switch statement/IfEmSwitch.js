@@ -19,4 +19,4 @@ Por favor, note: o breakna parte inferior não é necessário. Mas nós o coloca
 
 No futuro, existe a possibilidade de adicionarmos mais um case, por exemplo case 4. E se esquecermos de adicionar uma quebra antes dela, no final de case 3, haverá um erro. Então isso é um tipo de auto-seguro.
 
-*q
+*/
