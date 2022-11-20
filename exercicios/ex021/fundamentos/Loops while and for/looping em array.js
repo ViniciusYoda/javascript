@@ -15,6 +15,11 @@ for (let index = 0; index < bolsavanessa.length; index++) {
     if (bolsavanessa[index] == 'dinheiro') break;
 }
 
+for (let index = 0; index < bolsavanessa.length; index++) {
+    if (bolsavanessa[index] == 'dinheiro') continue;
+    console.log(`${index+1} : ${bolsavanessa[index]}`);
+}
+
 // for in
 
 const familia = [
@@ -86,23 +91,28 @@ const videos = [
     {
         id: 'hegwEGW',
         title: 'gfhgerwh',
-        view: 37200
+        view: 37200,
+        like: 1000
     },
     {
         id: 'htjrheW',
         title: 'gfjwth',
-        view: 22510
+        view: 22510,
+        like: 1000
     },
     {
         id: 'rwtwgGW',
         title: 'qrmnbsrwh',
-        view: 34732
+        view: 34732,
+        like: 1000
     },
 ]
 
 const totalView = videos.reduce((sum, video) => {
-    return sum + video.view
-}, 0)
+    sum.view += video.view
+    sum.like += video.like
+    return sum
+}, {views:0,likes:0})
 
 console.log(totalView)
 
@@ -134,4 +144,53 @@ console.log(somenteAdulto);
 // some
 
 const temAdulto = idadeFamilia.some(ehAdulto)
-console.log(temAdultod);
+console.log(temAdulto);
+
+// For Of
+
+for (item of bolsavanessa) {
+    console.log(item)
+}
+
+for (item of videos) {
+    console.log(item.title)
+}
+
+const canal = "Codigo Fonte TV"
+
+for (letra of canal) {
+    console.log(letra)
+}
+
+// Find
+
+const sobremesas = [
+    {
+        nome: 'pudim',
+        diet: false,
+    },
+    {
+        nome: 'gelatina',
+        diet: true,
+    },
+    {
+        nome: 'bolo de chocolate',
+        diet: true,
+    },
+    {
+        nome: 'pavê',
+        diet: false
+    },
+]
+
+const idDiet = item => item.diet
+const sobremesa = sobremesas.find(idDiet)
+console.log(sobremesa)
+
+// Do while
+
+let index1 = 0
+do {
+    console.log(`${index1 + 1} ${bolsavanessa[index1]}`)
+    index1++
+} while (index1 < bolsavanessa.length)
