@@ -8,7 +8,7 @@ Vejamos as principais distinções entre primitivos e objetos.
 Um primitivo
 
 É um valor de um tipo primitivo.
-Existem 7 tipos primitivos: string, number, bigint, boolean, symbol, nulle undefined.
+Existem 7 tipos primitivos: string, number, bigint, boolean, symbol, null e undefined.
 Um objeto
 
 É capaz de armazenar vários valores como propriedades.
@@ -64,9 +64,9 @@ alert( str.toUpperCase() ); // HELLO
 
 Simples, certo? Veja o que realmente acontece em str.toUpperCase():
 
-1. A string stré uma primitiva. Assim, no momento de acessar sua propriedade, é criado um objeto especial que conhece o valor da string e possui métodos úteis, como toUpperCase().
+1. A string str é uma primitiva. Assim, no momento de acessar sua propriedade, é criado um objeto especial que conhece o valor da string e possui métodos úteis, como toUpperCase().
 2. Esse método é executado e retorna uma nova string (mostrada por alert).
-3. O objeto especial é destruído, deixando o primitivo em strpaz.
+3. O objeto especial é destruído, deixando o primitivo em str paz.
 
 Portanto, os primitivos podem fornecer métodos, mas ainda permanecem leves.
 
@@ -84,7 +84,7 @@ alert( n.toFixed(2) ); // 1.23
 
 Veremos métodos mais específicos nos capítulos Numbers and Strings .
 
-Construtores String/Number/Booleansão apenas para uso interno
+Construtores String/Number/Boolean são apenas para uso interno
 Algumas linguagens como Java nos permitem criar explicitamente “objetos wrapper” para primitivos usando uma sintaxe como new Number(1)ou new Boolean(false).
 
 Em JavaScript, isso também é possível por motivos históricos, mas altamente não recomendado . As coisas vão enlouquecer em vários lugares.
@@ -107,7 +107,7 @@ if (zero) { // zero is true, because it´s an object
 
 /*
 
-Por outro lado, usar as mesmas funções String/Number/Booleansem newé algo totalmente bom e útil. Eles convertem um valor para o tipo correspondente: para uma string, um número ou um booleano (primitivo).
+Por outro lado, usar as mesmas funções String/Number/Boolean sem new é algo totalmente bom e útil. Eles convertem um valor para o tipo correspondente: para uma string, um número ou um booleano (primitivo).
 
 Por exemplo, isso é totalmente válido:
 
