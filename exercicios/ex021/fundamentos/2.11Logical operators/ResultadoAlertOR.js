@@ -12,4 +12,4 @@ A chamada para alert não retorna um valor. Ou, em outras palavras, ele retorna 
 
 3. O segundo operando 2 é verdadeiro, então a execução é interrompida, 2 é retornada e então mostrada pelo alerta externo.
 
-Não haverá 3, porque a avaliação não chega alert(3).
+Não haverá 3, porque a avaliação não chega alert(3).*/
