@@ -18,7 +18,7 @@ Nesse caso, quando tentamos obter user.address.street, e o usuário está sem en
 
 */
 
-let user = {}; // a  user without "address" property
+let user3 = {}; // a  user without "address" property
 
 alert(user.address.street); // Error!
 
@@ -33,7 +33,7 @@ Em muitos casos práticos, preferimos obter undefinedem vez de um erro aqui (sig
 */
 
 // document.querySelector('.elem') is null if there´s no element
-let html = document.querySelector('.elem').innerHTML; // error if it´s null
+let html2 = document.querySelector('.elem').innerHTML; // error if it´s null
 
 /*
 
@@ -45,7 +45,7 @@ A solução óbvia seria verificar o valor usando ifou o operador condicional ?,
 
 */
 
-let user = {};
+let user4 = {};
 
 alert(user.address ? user.address.street : undefined);
 
@@ -57,7 +57,7 @@ Veja como o mesmo ficaria document.querySelector:
 
 */
 
-let html = document.querySelector('.elem') ? document.querySelector('.elem').innerHTML : null;
+let html3 = document.querySelector('.elem') ? document.querySelector('.elem').innerHTML : null;
 
 /*
 
@@ -69,7 +69,7 @@ Por exemplo, vamos entrar user.address.street.namede forma semelhante.
 
 */
 
-let user = {}; // user has no address
+let user5 = {}; // user has no address
 
 alert(user.address ? user.address.street ? user.address.street.name : null : null);
 
@@ -81,7 +81,7 @@ Há uma maneira um pouco melhor de escrevê-lo, usando o &&operador:
 
 */
 
-let user = {}; // user has no address
+let userq = {}; // user has no address
 
 alert( user.address && user.address.street && user.address.street.name); // undefined (no error)
 
@@ -106,7 +106,7 @@ Aqui está a maneira segura de acessar user.address.streetusando ?.:
 
 */
 
-let user = {}; // user has no address
+let userw = {}; // user has no address
 
 alert( user?.address?.street ); // undefined (no error)
 
@@ -122,7 +122,7 @@ let html = document.querySelector('.elem')?.innerHTML; // will be undefined, if 
 
 // Ler o endereço com user?.addressfunciona mesmo que usero objeto não exista:
 
-let user = null;
+let usere = null;
 
 alert (user?.address ); // undefined
 alert( user?.address.street ); // undefined
@@ -161,7 +161,7 @@ Por exemplo:
 
 */
 
-let user = null;
+let userr = null;
 let x = 0;
 
 user?.sayHi(x++); // no "user", so the execution doesn´t reach sayHi call and x++
@@ -242,4 +242,5 @@ Como podemos ver, todos eles são diretos e simples de usar. O ?.verifica a part
 
 Uma cadeia de ?.permite acessar com segurança propriedades aninhadas.
 
-Ainda assim, devemos aplicar ?.com cuidado, apenas onde for aceitável, de acordo com nossa lógica de código, que a parte esquerda não exista. Para que não esconda erros de programação de nós, se eles ocorrerem.
+Ainda assim, devemos aplicar ?.com cuidado, apenas onde for aceitável, de acordo com nossa lógica de código, que a parte esquerda não exista. Para que não esconda erros de programação de nós, se eles ocorrerem. */
+

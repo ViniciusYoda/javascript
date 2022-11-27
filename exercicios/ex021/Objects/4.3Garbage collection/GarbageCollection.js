@@ -34,7 +34,7 @@ Aqui está o exemplo mais simples:
 */
 
 // user has a reference to the object
-let user = {
+let user2 = {
     name: "John"
 };
 
