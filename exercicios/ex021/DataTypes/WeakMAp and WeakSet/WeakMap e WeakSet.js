@@ -7,7 +7,7 @@ Por exemplo:
 
 */
 
-let john = { name: "John" };
+let john4 = { name: "John" };
 
 // the object can be accessed, john is the reference to it
 
@@ -26,7 +26,7 @@ Assim:
 
 */
 
-let john = { name: "John" };
+let john3 = { name: "John" };
 
 let array = [ john ];
 
@@ -44,7 +44,7 @@ Por exemplo:
 
 */
 
-let john = { name: "John" };
+let john5 = { name: "John" };
 
 let map = new Map();
 map.set(john, "...");
@@ -65,18 +65,18 @@ A primeira diferença entre Mape WeakMapé que as chaves devem ser objetos, não
 
 */
 
-let weakMap = new WeakMap();
+let weakMap2 = new WeakMap();
 
-let obj = {};
+let obj2 = {};
 
-weakMap.set(obj, "ok"); // works fine (object key)
+weakMap2.set(obj2, "ok"); // works fine (object key)
 
 // can't use a string as the key
-weakMap.set("test", "Whoops"); // Error, because "test" is not an object
+weakMap2.set("test", "Whoops"); // Error, because "test" is not an object
 
 // Agora, se usarmos um objeto como chave nele, e não houver outras referências a esse objeto - ele será removido da memória (e do mapa) automaticamente.
 
-let john = { name: "John" };
+let john2 = { name: "John" };
 
 let weakMap = new WeakMap();
 weakMap.set(john, "...");
@@ -126,7 +126,7 @@ Aqui está um exemplo de uma função de contagem com Map:
 */
 
 // 📁 visitsCount.js
-let visitsCountMap = new Map(); // map: user => visits count
+let visitsCountMap2 = new Map(); // map: user => visits count
 
 // increase the visits count
 function countUser(user) {
@@ -137,7 +137,7 @@ function countUser(user) {
 // E aqui está outra parte do código, talvez outro arquivo usando:
 
 // 📁 main.js
-let john = { name: "John" };
+let john6 = { name: "John" };
 
 countUser(john); // count his visits
 
@@ -176,7 +176,7 @@ Para conseguir isso, podemos usar Map(cenário não ideal):
 */
 
 // 📁 cache.js
-let cache = new Map();
+let cache2 = new Map();
 
 // calculate and remember the result
 function process(obj) {
@@ -193,12 +193,12 @@ function process(obj) {
 // Now we use process() in another file:
 
 // 📁 main.js
-let obj = {/* let´s say we have an object */};
+let obj3 = {/* let´s say we have an object */};
 
-let result1 = process(obj); // calculated
+let result1_ = process(obj); // calculated
 
 // ...later, from another place of the code...
-let result2 = process(obj); // remembered result taken from cache
+let result2_ = process(obj); // remembered result taken from cache
 
 // ...later, when the object is not needed any more:
 obj = null;
