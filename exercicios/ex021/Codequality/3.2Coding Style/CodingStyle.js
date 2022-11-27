@@ -223,7 +223,7 @@ function walkAround() {
 }
 
 // the code which uses them
-let elem = createElement();
+let elem2 = createElement();
 setHandler(elem);
 walkAround();
 

@@ -163,4 +163,4 @@ Há muito mais opções em ferramentas de desenvolvedor do que as abordadas aqui
 
 As informações deste capítulo são suficientes para começar a depurar, mas mais tarde, especialmente se você faz muitas coisas de navegador, vá até lá e veja os recursos mais avançados das ferramentas de desenvolvedor.
 
-Ah, e você também pode clicar em vários locais de ferramentas de desenvolvimento e ver o que está aparecendo. Esse é provavelmente o caminho mais rápido para aprender ferramentas de desenvolvimento. Não se esqueça dos menus de contexto e clique com o botão direito!
+Ah, e você também pode clicar em vários locais de ferramentas de desenvolvimento e ver o que está aparecendo. Esse é provavelmente o caminho mais rápido para aprender ferramentas de desenvolvimento. Não se esqueça dos menus de contexto e clique com o botão direito! */
