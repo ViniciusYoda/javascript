@@ -22,7 +22,7 @@ let arr = ["John", "Smith"]
 // destructuring assignment
 // sets firstName = arr[0]
 // and surname = arr[1]
-let [firstName, surname] = arr;
+let [firstName1, surname1] = arr;
 
 alert(firstName); // John
 alert(surname);  // Smith
@@ -35,7 +35,7 @@ Parece ótimo quando combinado com splitou outros métodos de retorno de matriz:
 
 */
 
-let [firstName, surname] = "John Smith".split(' ');
+let [firstName2, surname2] = "John Smith".split(' ');
 alert(firstName); // John
 alert(surname);  // Smith
 
@@ -51,8 +51,8 @@ Como você pode ver, a sintaxe é simples. Existem vários detalhes peculiares e
 */
 
 // let [firstName, surname] = arr;
-let firstName = arr[0];
-let surname = arr[1];
+let firstName3 = arr[0];
+let surname3 = arr[1];
 
 /*
 
@@ -62,7 +62,7 @@ Elementos indesejados da matriz também podem ser descartados por meio de uma v�
 */
 
 // second element is not needed
-let [firstName, , title] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+let [firstName4, , title4] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
 
 alert( title ); // Consul
 
@@ -88,7 +88,7 @@ Podemos usar quaisquer “atribuíveis” no lado esquerdo.
 Por exemplo, uma propriedade de objeto:
 */
 
-let user = {};
+let user5 = {};
 [user.name, user.surname] = "John Smith".split(' ');
 
 alert(user.name); // John
@@ -103,7 +103,7 @@ Podemos usá-lo com desestruturação para fazer um loop sobre chaves e valores 
 
 */
 
-let user = {
+let user6 = {
     name: "John",
     age: 30
 };
@@ -152,7 +152,7 @@ Por exemplo, aqui apenas dois itens são retirados, e o resto é simplesmente ig
 
 */
 
-let [name1, name2] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+let [name17, name27] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
 
 
 alert(name1); // Julius
@@ -161,7 +161,7 @@ alert(name2); // Caesar
 
 // Se também quisermos reunir tudo o que segue – podemos adicionar mais um parâmetro que obtém “o resto” usando três pontos "...":
 
-let [name1, name2, ...rest] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+let [name18, name28, ...rest8] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
 
 // rest is array of items, starting from the 3rd one
 alert(rest[0]); // Consul
@@ -186,7 +186,7 @@ Se a matriz for menor que a lista de variáveis ​​à esquerda, não haverá 
 
 */
 
-let [firstName, surname] = []
+let [firstName, surname9] = []
 
 alert(firstName); // undefined
 alert(surname); // undefined
@@ -194,7 +194,7 @@ alert(surname); // undefined
 // Se quisermos que um valor “padrão” substitua o que falta, podemos fornecê-lo usando =:
 
 // default values
-let [name = "Guest", surname = "Anonymous"] = ["Julius"];
+let [name10 = "Guest", surname10 = "Anonymous"] = ["Julius"];
 
 alert(name);    // Julius (from array)
 alert(surname); // Anonymous (default used)
@@ -234,7 +234,7 @@ Por exemplo:
 
 */
 
-let options = {
+let options11 = {
     title: "Menu",
     width: 100,
     height: 200
@@ -562,7 +562,7 @@ let {prop: varName = default, ...rest} = object
 
 /*
 
-Isso significa que a propriedade propdeve entrar na variável varNamee, se essa propriedade não existir, o defaultvalor deve ser usado.
+Isso significa que a propriedade propd eve entrar na variável var Name e, se essa propriedade não existir, o default valor deve ser usado.
 
 As propriedades do objeto que não têm mapeamento são copiadas para o restobjeto.
 
