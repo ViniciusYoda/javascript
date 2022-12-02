@@ -175,7 +175,7 @@ A sintaxe completa de JSON.stringifyé:
 
 */
 
-let json2 = JSON.stringify(value[, replacer, space])
+let json2 = JSON.stringify(value[f, replacer, space])
 
 /*
 
