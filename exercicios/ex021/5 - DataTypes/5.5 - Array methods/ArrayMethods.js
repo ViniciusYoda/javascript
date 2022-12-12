@@ -20,7 +20,7 @@ Os arrays são objetos, então podemos tentar usar delete:
 
 */
 
-let arr ["I", "go", "home"];
+let arr2 = ["I", "go", "home"];
 
 delete arr[1]; // remove "go"
 
