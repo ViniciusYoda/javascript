@@ -69,7 +69,7 @@ if (!window.Promise) {
 // Se não houver nenhum (digamos, estamos em um navegador antigo), podemos criar “polyfills”: adicionar funções que não são suportadas pelo ambiente, mas existem no padrão moderno.
 
 if (!window.Promise) {
-   window.Promise = ... // custom implementation of the modern language feature
+   window.Promise = '...' // custom implementation of the modern language feature
 }
 
 /*

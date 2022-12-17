@@ -261,7 +261,7 @@ Em todos os casos acima, declaramos uma Expressão de Função e a executamos im
 Em todos os casos acima, declaramos uma Expressão de Função e a executamos imediatamente. Observemos novamente: hoje em dia não há razão para escrever tal código.
 
 Resumo
-Existem duas diferenças principais em varrelação a let/const:
+Existem duas diferenças principais em var relação a let/const:
 
 1. var as variáveis ​​não têm escopo de bloco, sua visibilidade tem como escopo a função atual ou global, se declarada fora da função.
 2. var as declarações são processadas no início da função (início do script para globais).
