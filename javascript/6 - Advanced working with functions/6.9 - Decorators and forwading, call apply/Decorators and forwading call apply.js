@@ -365,8 +365,8 @@ Os decoradores podem ser vistos como “recursos” ou “aspectos” que podem 
 
 Para implementar cachingDecorator, estudamos métodos:
 
-func.call(context, arg1, arg2…) – chamadas funccom contexto e argumentos fornecidos.
-func.apply(context, args) – chama a funcpassagem contextcomo thise como uma matriz argspara uma lista de argumentos.
+func.call(context, arg1, arg2…) – chamadas func com contexto e argumentos fornecidos.
+func.apply(context, args) – chama a func passagem context como this e como uma matriz args para uma lista de argumentos.
 O encaminhamento de chamadas genérico geralmente é feito com apply:
 
 let wrapper = function() {
