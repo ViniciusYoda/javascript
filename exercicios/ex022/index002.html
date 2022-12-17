@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .box {
+         width: 200px;
+         height: 200px;
+         background-color: red;
+         margin-left: 0;
+      }
+
+      .animeEsquerda {
+         transition: 1s;
+         margin-left: 90px;
+         margin-top: 20px;
+         background-color: green;
+      }
+   </style>
+</head>
+<body>
+   <div class="box"></div>
+   <script>
+      var box = document.querySelectorAll('.box')[0]
+      /*
+      setTimeout(() => {
+         box.classList.add('animeEsquerda')
+      },1000)
+      */
+     box.addEventListener('click', () => {
+      box.classList.add('animeEsquerda')
+     })
+   </script>
+</body>
+</html>
