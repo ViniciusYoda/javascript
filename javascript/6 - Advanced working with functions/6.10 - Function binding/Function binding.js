@@ -289,9 +289,9 @@ Tão fácil fazer isso com a sintaxe de propagação, certo?
 Também há uma implementação _.partial pronta da biblioteca lodash.
 
 Resumo
-O método func.bind(context, ...args)retorna uma “variante vinculada” da função funcque corrige o contexto thise os primeiros argumentos, se fornecidos.
+O método func.bind(context, ...args)retorna uma “variante vinculada” da função func que corrige o contexto this e os primeiros argumentos, se fornecidos.
 
-Normalmente aplicamos bindo fix thispara um método de objeto, para que possamos passá-lo em algum lugar. Por exemplo, para setTimeout.
+Normalmente aplicamos bind o fix this para um método de objeto, para que possamos passá-lo em algum lugar. Por exemplo, para setTimeout.
 
 Quando fixamos alguns argumentos de uma função existente, a função resultante (menos universal) é chamada parcialmente aplicada ou parcial .
 

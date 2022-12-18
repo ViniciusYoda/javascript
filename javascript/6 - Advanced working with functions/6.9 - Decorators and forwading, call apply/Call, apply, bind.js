@@ -5,7 +5,7 @@ function thisBindExemplo() {
 
 const obj = {exemplo: "exemplo"}
 
-// thisBindExemplo = thisBindExemplo.bind(obj)
+thisBindExemplo = thisBindExemplo.bind(obj)
 
 thisBindExemplo()
 
