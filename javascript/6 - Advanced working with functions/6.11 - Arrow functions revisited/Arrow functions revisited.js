@@ -113,9 +113,9 @@ Aqui tivemos que criar variáveis ​​adicionais argse ctxpara que a função 
 Resumo
 Funções de seta:
 
-Não temthis
-Não temarguments
-Não pode ser chamado comnew
+Não tem this
+Não tem arguments
+Não pode ser chamado com new
 Eles também não têm super, mas ainda não estudamos. Iremos no capítulo Herança de classe
 
 Isso porque eles são destinados a pequenos trechos de código que não possuem seu próprio “contexto”, mas funcionam no atual. E eles realmente brilham nesse caso de uso.
