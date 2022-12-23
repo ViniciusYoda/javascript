@@ -14,4 +14,4 @@ console.log(rabbit.jumps); // (2) null, retirado de animal.
 
 delete animal.jumps;
 
-console.log(rabbit.jumps); // (3) ndefined, não existe mais essa propriedade.
+console.log(rabbit.jumps); // (3) undefined, não existe mais essa propriedade.
