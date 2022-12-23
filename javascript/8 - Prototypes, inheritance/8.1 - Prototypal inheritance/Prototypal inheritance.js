@@ -315,8 +315,8 @@ Podemos usar obj.__proto__para acessá-lo (um getter/setter histórico, existem 
 O objeto referenciado por [[Prototype]]é chamado de “protótipo”.
 Se quisermos ler uma propriedade objou chamar um método e ele não existir, o JavaScript tentará encontrá-lo no protótipo.
 As operações de gravação/exclusão agem diretamente no objeto, não usam o protótipo (supondo que seja uma propriedade de dados, não um setter).
-Se chamarmos obj.method(), e methodfor retirado do protótipo, thisainda referenciará obj. Portanto, os métodos sempre funcionam com o objeto atual, mesmo que sejam herdados.
-O for..inloop itera sobre suas próprias propriedades e herdadas. Todos os outros métodos de obtenção de chave/valor operam apenas no próprio objeto.
+Se chamarmos obj.method(), e methodfor retirado do protótipo, this ainda referenciará obj. Portanto, os métodos sempre funcionam com o objeto atual, mesmo que sejam herdados.
+O for..in loop itera sobre suas próprias propriedades e herdadas. Todos os outros métodos de obtenção de chave/valor operam apenas no próprio objeto.
 
 */
 
