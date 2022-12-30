@@ -596,7 +596,7 @@ Eles funcionam assim:
 4. Podemos fazer login na interface da Web do serviço e ver os erros.
 
 Resumo
-A try...catchconstrução permite lidar com erros de tempo de execução. Ele literalmente permite “tentar” rodar o código e “capturar” erros que possam ocorrer nele.
+A try...catch construção permite lidar com erros de tempo de execução. Ele literalmente permite “tentar” rodar o código e “capturar” erros que possam ocorrer nele.
 
 A sintaxe é:
 
@@ -608,7 +608,7 @@ try {
 } finally {
   // do in any case after try/catch
 }
-Pode não haver catchseção ou nenhum finally, portanto, construções mais curtas try...catche try...finallytambém são válidas.
+Pode não haver catch seção ou nenhum finally, portanto, construções mais curtas try...catch e try...finallytambém são válidas.
 
 Objetos de erro têm as seguintes propriedades:
 
@@ -618,7 +618,7 @@ stack(não padrão, mas bem suportado) – a pilha no momento da criação do er
 
 Se um objeto de erro não for necessário, podemos omiti-lo usando catch {em vez de catch (err) {.
 
-Também podemos gerar nossos próprios erros usando o throwoperador. Tecnicamente, o argumento de throwpode ser qualquer coisa, mas geralmente é um objeto de erro herdado da Errorclasse interna. Mais informações sobre a extensão de erros no próximo capítulo.
+Também podemos gerar nossos próprios erros usando o throw operador. Tecnicamente, o argumento de throw pode ser qualquer coisa, mas geralmente é um objeto de erro herdado da Error classe interna. Mais informações sobre a extensão de erros no próximo capítulo.
 
 O relançamento é um padrão muito importante de tratamento de erros: um catchbloco geralmente espera e sabe como lidar com o tipo de erro específico, portanto, deve relançar os erros que não conhece.
 
