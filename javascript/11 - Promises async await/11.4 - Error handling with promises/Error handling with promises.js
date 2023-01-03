@@ -190,8 +190,8 @@ Em ambientes sem navegador, como o Node.js, existem outras maneiras de rastrear 
 
 Resumo
 
-.catchlida com erros em promessas de todos os tipos: seja uma reject()chamada ou um erro lançado em um manipulador.
-.thentambém detecta erros da mesma maneira, se receber o segundo argumento (que é o manipulador de erros).
+.catch lida com erros em promessas de todos os tipos: seja uma reject()chamada ou um erro lançado em um manipulador.
+.then também detecta erros da mesma maneira, se receber o segundo argumento (que é o manipulador de erros).
 Devemos colocar .catchexatamente nos lugares onde queremos lidar com erros e saber como lidar com eles. O manipulador deve analisar os erros (ajuda de classes de erro personalizadas) e relançar os desconhecidos (talvez sejam erros de programação).
 Tudo bem não usar .catchde jeito nenhum, se não houver como se recuperar de um erro.
 De qualquer forma, devemos ter o unhandledrejectionmanipulador de eventos (para navegadores e análogos para outros ambientes) para rastrear erros não tratados e informar o usuário (e provavelmente nosso servidor) sobre eles, para que nosso aplicativo nunca “simplesmente morra”.
