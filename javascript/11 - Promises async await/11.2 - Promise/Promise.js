@@ -327,7 +327,7 @@ promise7.then(script => alert('Another handler...'));
 Podemos ver imediatamente alguns benefícios sobre o padrão baseado em callback:
 
 Promessas	Chamadas de retorno
-As promessas nos permitem fazer as coisas na ordem natural. Primeiro, executamos loadScript(script)e .thenescrevemos o que fazer com o resultado.	Devemos ter uma callbackfunção à nossa disposição ao chamar loadScript(script, callback). Em outras palavras, devemos saber o que fazer com o resultado antes loadScript de ser chamado.
+As promessas nos permitem fazer as coisas na ordem natural. Primeiro, executamos loadScript(script)e .thenescrevemos o que fazer com o resultado.	Devemos ter uma callback função à nossa disposição ao chamar loadScript(script, callback). Em outras palavras, devemos saber o que fazer com o resultado antes loadScript de ser chamado.
 Podemos invocar .thenuma Promessa quantas vezes quisermos. A cada vez, adicionamos um novo “fã”, uma nova função de assinatura, à “lista de assinaturas”. Mais sobre isso no próximo capítulo: Encadeamento de promessas .	Só pode haver um retorno de chamada.
 Portanto, as promessas nos fornecem melhor fluxo de código e flexibilidade. Mas há mais. Veremos isso nos próximos capítulos.
 
