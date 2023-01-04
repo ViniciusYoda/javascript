@@ -76,7 +76,7 @@ Tudo o que precisamos fazer é realizar algumas substituições no código acima
 
 */
 
-let range = {
+let range4 = {
    from: 1,
    to: 5,
 
